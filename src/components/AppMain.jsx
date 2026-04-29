@@ -41,8 +41,11 @@ export default function AppMain(){
 
             {/* FINE - ESERCIZIO BASE */}
 
+            {/* - - - X X X X X X X X X X X X X - - - */}
+
             {/* INIZIO - ESERCIZIO BONUS */}
 
+            {/* lista dei bottoni in d-flex */}
             <div className="contenitore">
 
                 {
@@ -56,7 +59,11 @@ export default function AppMain(){
                 }
 
             </div>
+            
+            {/* card singola con descrizione del singolo linguaggio */}
 
+            {/* lasciamo card fuori il ciclo map, perché vogliamo una singola card esternamente,
+                cosi cicliamo le singole descrizioni all'interno di essa */}
             {
             <div className="card">
                         {
@@ -69,7 +76,9 @@ export default function AppMain(){
                             ))
                         }
             </div>
-            }       
+            }
+
+            {/* FINE - ESERCIZIO BONUS */}
 
         </main>      
     )
