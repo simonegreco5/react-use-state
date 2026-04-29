@@ -22,10 +22,8 @@ main{
         background-color: rgba(244, 241, 241, 0.914);
         border: 1px solid rgba(138, 136, 136, 0.736);
         padding: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin: 1rem 0rem;
         border-radius: 0.5rem;
-
         
         .card-body{
             padding: 0.5rem;
@@ -33,6 +31,7 @@ main{
     }
 
     .btn{
+        font-size: 1.2rem;
         background-color: rgb(1, 94, 217); 
         color: white;
         border: none;
@@ -42,7 +41,8 @@ main{
     }
     
     .btn-warning{
-        background-color: rgb(242, 214, 7); 
+        font-size: 1.2rem;
+        background-color: rgb(245, 197, 7); 
         color: black;
         border: none;
         padding: 0.5rem;
@@ -50,10 +50,15 @@ main{
         cursor: pointer;
     }
     
-    .contenitore{
+    .button-flex{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 1rem;
         
+    }
+
+    .contenitore{
+        max-width: 900px;
+        margin: auto;
     }
 }

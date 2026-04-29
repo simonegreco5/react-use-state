@@ -45,8 +45,10 @@ export default function AppMain(){
 
             {/* INIZIO - ESERCIZIO BONUS */}
 
-            {/* lista dei bottoni in d-flex */}
             <div className="contenitore">
+
+               {/* lista dei bottoni in d-flex */}
+               <div className="button-flex">
 
                 {
                 languages.map((item) => (
@@ -58,14 +60,14 @@ export default function AppMain(){
                 ))  
                 }
 
-            </div>
+               </div>
             
-            {/* card singola con descrizione del singolo linguaggio */}
+               {/* card singola con descrizione del singolo linguaggio */}
 
-            {/* lasciamo card fuori il ciclo map, perché vogliamo una singola card esternamente,
+               {/* lasciamo card fuori il ciclo map, perché vogliamo una singola card esternamente,
                 cosi cicliamo le singole descrizioni all'interno di essa */}
-            {
-            <div className="card">
+               {
+               <div className="card">
                         {
                             languages.map((item) => (
                                 isActive === item.id && (
@@ -75,8 +77,11 @@ export default function AppMain(){
                                 )  
                             ))
                         }
+               </div>
+               }
+               
             </div>
-            }
+
 
             {/* FINE - ESERCIZIO BONUS */}
 
