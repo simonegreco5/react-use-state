@@ -7,15 +7,30 @@
 header{
     padding: 1rem;
     background-color: rgba(244, 241, 241, 0.914);
+    border: 1px solid rgba(138, 136, 136, 0.736);
 }
 
 main{
+    background-color: aliceblue;
     padding: 2rem;
 
     .card{
-        border: 1px solid black;
+        background-color: rgba(244, 241, 241, 0.914);
+        border: 1px solid rgba(138, 136, 136, 0.736);
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 0.5rem;
+
+        .btn{
+            background-color: rgb(1, 94, 217); 
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .card-body{
+            padding: 0.5rem;
+        }
     }
 }
