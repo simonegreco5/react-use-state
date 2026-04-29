@@ -6,10 +6,14 @@ export default function AppMain(){
 
     const [isActive, setIsActive] = useState(false)
 
-    
-    function show(){
-        setIsActive((prevState) => !prevState)
-    }
+
+    // function show(id){
+
+    //     // if (isActive === id){
+    //     //     return setIsActive(false)
+    //     // }
+    //     setIsActive(id)
+    // }
 
     
 
@@ -19,11 +23,11 @@ export default function AppMain(){
                 languages.map((item) => (
                     
                     <div className="card" key={item.id}>
-                        <button className="btn" onClick={show} >
+                        <button className={`${isActive === item.id ? 'btn-warning' : 'btn'}`} onClick={() => setIsActive(item.id)} >
                             {item.title}
                         </button>
                         {
-                            isActive && (<div className="card-body">
+                            isActive === item.id && (<div className="card-body">
                             {item.description}
                             </div>)
                         }

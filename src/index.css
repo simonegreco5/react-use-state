@@ -30,6 +30,15 @@ main{
             cursor: pointer;
         }
 
+        .btn-warning{
+            background-color: rgb(242, 214, 7); 
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
         .card-body{
             padding: 0.5rem;
         }
