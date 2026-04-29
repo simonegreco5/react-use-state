@@ -1,1 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header{
+    padding: 1rem;
+    background-color: rgba(244, 241, 241, 0.914);
+}
+
+main{
+    padding: 2rem;
+
+    .card{
+        border: 1px solid black;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+    }
+}
