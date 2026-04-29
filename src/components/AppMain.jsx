@@ -1,7 +1,17 @@
 // sezione import
+import { useState } from 'react'
 import languages from '../assets/languages.js'
 
 export default function AppMain(){
+
+    const [isActive, setIsActive] = useState(false)
+
+    
+    function show(){
+        setIsActive((prevState) => !prevState)
+    }
+
+    
 
     return(
         <main>
@@ -9,12 +19,14 @@ export default function AppMain(){
                 languages.map((item) => (
                     
                     <div className="card" key={item.id}>
-                        <button className="btn">
+                        <button className="btn" onClick={show} >
                             {item.title}
                         </button>
-                        <div className="card-body">
+                        {
+                            isActive && (<div className="card-body">
                             {item.description}
-                        </div>
+                            </div>)
+                        }
                     </div>
                 
                 ))
