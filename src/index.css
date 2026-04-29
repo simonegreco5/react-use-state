@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
 header{
     padding: 1rem;
     background-color: rgba(244, 241, 241, 0.914);
@@ -18,29 +22,38 @@ main{
         background-color: rgba(244, 241, 241, 0.914);
         border: 1px solid rgba(138, 136, 136, 0.736);
         padding: 1rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
         border-radius: 0.5rem;
 
-        .btn{
-            background-color: rgb(1, 94, 217); 
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
-
-        .btn-warning{
-            background-color: rgb(242, 214, 7); 
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
-
+        
         .card-body{
             padding: 0.5rem;
         }
+    }
+
+    .btn{
+        background-color: rgb(1, 94, 217); 
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .btn-warning{
+        background-color: rgb(242, 214, 7); 
+        color: black;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .contenitore{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        
     }
 }

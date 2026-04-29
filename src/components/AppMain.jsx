@@ -19,7 +19,10 @@ export default function AppMain(){
 
     return(
         <main>
-            {
+
+            {/* INIZIO - ESERCIZIO BASE */}
+
+            {/* {
                 languages.map((item) => (
                     
                     <div className="card" key={item.id}>
@@ -34,7 +37,40 @@ export default function AppMain(){
                     </div>
                 
                 ))
-            }
+            } */}
+
+            {/* FINE - ESERCIZIO BASE */}
+
+            {/* INIZIO - ESERCIZIO BONUS */}
+
+            <div className="contenitore">
+
+                {
+                languages.map((item) => (
+                
+                <button className={`${isActive === item.id ? 'btn-warning' : 'btn'}`} onClick={() => setIsActive(item.id) } key={item.id}>
+                    {item.title}
+                </button>
+
+                ))  
+                }
+
+            </div>
+
+            {
+            <div className="card">
+                        {
+                            languages.map((item) => (
+                                isActive === item.id && (
+                                    <div className="card-body">
+                                        {item.description}
+                                    </div>
+                                )  
+                            ))
+                        }
+            </div>
+            }       
+
         </main>      
     )
 }
