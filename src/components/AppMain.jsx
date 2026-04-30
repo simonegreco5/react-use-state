@@ -71,7 +71,7 @@ export default function AppMain(){
                         {
                             languages.map((item) => (
                                 isActive === item.id && (
-                                    <div className="card-body">
+                                    <div className="card-body" key={item.id}>
                                         {item.description}
                                     </div>
                                 )  
@@ -79,7 +79,7 @@ export default function AppMain(){
                         }
                </div>
                }
-               
+
             </div>
 
 
